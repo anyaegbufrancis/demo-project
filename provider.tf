@@ -6,14 +6,14 @@ terraform {
     }
   }
 }
- // Updatign file
+// Updatign file
 
 provider "azurerm" {
   features {}
-  subscription_id   = var.az_subscription
-  tenant_id         = var.az_tenant
-  client_id         = var.az_client_id
-  client_secret     = var.az_client_secret
+  subscription_id = var.az_subscription
+  tenant_id       = var.az_tenant
+  client_id       = var.az_client_id
+  client_secret   = var.az_client_secret
 }
 
 
