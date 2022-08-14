@@ -19,7 +19,9 @@ resource "azurerm_linux_web_app" "webapp" {
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.appserviceplan.id
   //https_only            = true
-  site_config {}
+  site_config {
+    always_on = false
+  }
 }
 
 resource "azurerm_app_service_source_control" "sourcecontrol" {
