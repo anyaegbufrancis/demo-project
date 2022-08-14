@@ -15,3 +15,6 @@ provider "azurerm" {
   client_id         = var.az_client_id
   client_secret     = var.az_client_secret
 }
+
+
+## changed
